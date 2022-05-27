@@ -7,6 +7,36 @@
     <meta name="description" content="blackbelt">
     <meta name="keywords" content="blackbelt">
     </head>
+    <style>
+        .blink_text
+        {
+            animation:1s blinker linear infinite;
+            -webkit-animation:1s blinker linear infinite;
+            -moz-animation:1s blinker linear infinite;
+            color: red;
+        }
+
+        @-moz-keyframes blinker
+        {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+        @-webkit-keyframes blinker
+        {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+        @keyframes blinker
+        {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+         }
+    </style>
     <body>
         <div style="position: fixed;
           top: 50%;
@@ -14,8 +44,8 @@
           /* bring your own prefixes */
           transform: translate(-50%, -50%)"
         >
-            <h2 style="font-size: 80px; text-align: center;">Have we gotten our blackbelt results yet?</h2>
-             <h2 style="font-size: 80px; text-align: center; color: red;">NO.</h2>
+            <h2 style="font-size: 60px; text-align: center;">Have we gotten our blackbelt results yet?</h2>
+             <h2 class="blink_text" style="font-size: 80px; text-align: center; color: red;">NO.</h2>
         </div>
 
     </body>
